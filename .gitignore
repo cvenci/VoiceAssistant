@@ -1,0 +1,6 @@
+venv
+VoiceRecognition/DeepSpeech
+VoiceRecognition/deepspeech-train-venv
+VoiceRecognition/data
+/.idea
+/.vscode
