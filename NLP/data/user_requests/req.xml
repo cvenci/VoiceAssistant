@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<root>
+    <tokenization>
+        <word id="1" value="السلام"/>
+        <word id="2" value="عليكم"/>
+        <word id="3" value="أريد"/>
+        <word id="4" value="أن"/>
+        <word id="5" value="أشاهد"/>
+        <word id="6" value="أحوال"/>
+        <word id="7" value="الطقس"/>
+    </tokenization>
+</root>
