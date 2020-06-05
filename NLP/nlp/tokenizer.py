@@ -8,7 +8,6 @@ determine the type of the command in the input
 from nltk.tokenize import WordPunctTokenizer
 import xml.etree.cElementTree as ET
 from xml.dom import minidom  # pycharm error
-import os.path
 
 
 def request_tokenizing(req_text_path, stop_words_path='../data/arabic_stopwords.txt',
@@ -38,8 +37,8 @@ def request_tokenizing(req_text_path, stop_words_path='../data/arabic_stopwords.
         sw = False
 
     xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(indent="    ")
-    with open(save_path + ('/req.xml'), 'w', encoding='utf-8') as f:
+    with open(save_path + '/req.xml', 'w', encoding='utf-8') as f:
         f.write(xmlstr)
     f.close()
 
-request_tokenizing(os.path.realpath('../data/user_requests/req.txt'))
+# request_tokenizing('../data/user_requests/req.txt')
