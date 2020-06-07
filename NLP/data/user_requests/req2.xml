@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<root>
+    <tokenization>
+        <word id="1" value="هل" stop_word="True"/>
+        <word id="2" value="ارتدي" stop_word="False"/>
+        <word id="3" value="المعطف" stop_word="False"/>
+        <word id="4" value="غدا" stop_word="False"/>
+    </tokenization>
+</root>

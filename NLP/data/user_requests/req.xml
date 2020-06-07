@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <root>
     <tokenization>
-        <word id="1" value="السلام" stop_word="False"/>
-        <word id="2" value="عليكم" stop_word="False"/>
-        <word id="3" value="أريد" stop_word="False"/>
-        <word id="4" value="أن" stop_word="True"/>
-        <word id="5" value="أشاهد" stop_word="False"/>
-        <word id="6" value="أحوال" stop_word="False"/>
-        <word id="7" value="الطقس" stop_word="False"/>
+        <word id="1" value="السلام" stem="سلم" stop_word="False"/>
+        <word id="2" value="عليكم" stem="علي" stop_word="False"/>
+        <word id="3" value="أريد" stem="ارد" stop_word="False"/>
+        <word id="4" value="أن" stem="ان" stop_word="True"/>
+        <word id="5" value="أشاهد" stem="شهد" stop_word="False"/>
+        <word id="6" value="أحوال" stem="حول" stop_word="False"/>
+        <word id="7" value="الطقس" stem="طقس" stop_word="False"/>
     </tokenization>
 </root>
