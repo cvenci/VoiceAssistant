@@ -1,3 +1,4 @@
+# THIS FILE WILL BE DELETED (replaced by a classifier package)
 """
 Calculating the similarity between the user query
 and the xml description of applications and affect
@@ -7,7 +8,6 @@ or to the advanced queries model
 # naive method
 from nltk.stem.isri import ISRIStemmer
 from xml.etree import ElementTree as ET
-
 
 def app_xml_parse(app_file_path):
     """return tuple containing key words
@@ -21,6 +21,7 @@ def app_xml_parse(app_file_path):
 
 
 def request_xml_parse(req_file_path):
+
     """return tuple containing the request words"""
     req_words = []
     treereq = ET.parse(req_file_path)
@@ -48,6 +49,7 @@ def similarity(app_words, req_words):
             else:
                 count_dict[rw] = 1
         rw_stemmed = stemmer.stem(rw)
+        print(rw_stemmed)
         if rw_stemmed in app_words:
             if rw_stemmed in stemmed_count_dict:
                 stemmed_count_dict[rw_stemmed] += 1
@@ -62,8 +64,9 @@ def similarity(app_words, req_words):
     for k in stemmed_count_dict.keys():
         stemmed_score = stemmed_score + int(stemmed_count_dict[k])
     stemmed_score = stemmed_score / len(req_words)
+    print(count_dict)
     return score, stemmed_score
 
 
-sc, ssc = similarity(app_xml_parse('../data/apps_data/weather.xml'), request_xml_parse('../data/user_requests/req2.xml'))
-print(sc, ssc)
+#sc, ssc = similarity(app_xml_parse('../data/apps_data/alarm_clock.xml'), request_xml_parse('../data/user_requests/req2.xml'))
+#print(sc)

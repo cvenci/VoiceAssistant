@@ -2,8 +2,9 @@
 <root>
     <tokenization>
         <word id="1" value="هل" stop_word="True"/>
-        <word id="2" value="ارتدي" stop_word="False"/>
-        <word id="3" value="المعطف" stop_word="False"/>
-        <word id="4" value="غدا" stop_word="False"/>
+        <word id="2" value="ستحدث" stop_word="False"/>
+        <word id="3" value="عاصفة" stop_word="False"/>
+        <word id="4" value="عند" stop_word="True"/>
+        <word id="5" value="المقابلة" stop_word="False"/>
     </tokenization>
 </root>
