@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<root>
+    <tokenization>
+        <word id="1" value="افتح" stop_word="False"/>
+        <word id="2" value="التطبيق" stop_word="False"/>
+    </tokenization>
+</root>

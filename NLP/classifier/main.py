@@ -2,7 +2,13 @@
     *passing the request to levels to be classified
     *receiving the classification response and processing the response"""
 
+import sys
+sys.path.append("VoiceAssistant/")
 from xml.etree import ElementTree as ET
+from NLP.classifier.level_zero import parser
+from NLP.nlp.tokenizer import request_tokenizing
+
+
 def xml_req_parse(req_file_path):
     """return tuple containing the request word set"""
     req_words = []
@@ -15,3 +21,9 @@ def xml_req_parse(req_file_path):
             else:
                 req_words.append(child.attrib['value'])
     return req_words
+
+
+request_tokenizing('VoiceAssistant/NLP/classifier/tests/req.txt', 'VoiceAssistant/NLP/classifier/tests/')
+req_words = xml_req_parse('VoiceAssistant/NLP/classifier/tests/req.xml')
+print(req_words)
+parser(req_words)

@@ -14,7 +14,7 @@ from xml.dom import minidom  # pycharm error
 
 def request_tokenizing(req_text_path, save_path='../data/user_requests'):
     """Read the request text file and produce
-    tokenizaton XML file for the request"""
+    tokenization XML file for the request"""
     f = open(req_text_path)
     line = f.readline()
     f.close()
@@ -42,8 +42,6 @@ def request_tokenizing(req_text_path, save_path='../data/user_requests'):
     with open(save_path + filestr, 'w', encoding='utf-8') as f:
         f.write(xmlstr)
     f.close()
-
-request_tokenizing('../data/user_requests/req2.txt')
 
 # STEMMINNG THE WORDS : for now we are using ISRIStemmer from nltk whitch is a heavy stemmer
 # more work will be done in order to test other stemmers
