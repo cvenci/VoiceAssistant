@@ -1,4 +1,4 @@
-from NLP.classifier.rules import VERBAL_PHRASE, OBJECTS, VERBS, TIME_OBJECTS, PLACE_OBJECTS, APP_OBJECTS
+from NLP.classifier.rules import OBJECTS, VERBS, TIME_OBJECTS, PLACE_OBJECTS, APP_OBJECTS
 
 
 def parser(req_words):
@@ -16,17 +16,14 @@ def parser(req_words):
             tags.append('APP_OBJECT')
         else:
             tags.append('NONE')
-    print(tags)
     # Verifying the validity of the request by matching it with the rules
-    valid = 0
+    valid = False
     if len(tags) == 1 and tags[0] == 'VERB':
-        valid = 1
-    elif tags[1] == 'VERB':
+        valid = True
+    elif tags[0] == 'VERB':
         for i in range(1, len(tags)):
             if tags[i] not in OBJECTS:
                 break
             else:
-                valid = 1
-    print(valid)
-    print(OBJECTS)
-    print('APP_OBJECTS' in OBJECTS)
+                valid = True
+    return valid

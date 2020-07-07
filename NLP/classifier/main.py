@@ -4,9 +4,14 @@
 
 import sys
 sys.path.append("VoiceAssistant/")
+
+from os import listdir
+from os.path import isfile, join
 from xml.etree import ElementTree as ET
+import operator
+
 from NLP.classifier.level_zero import parser
-from NLP.nlp.tokenizer import request_tokenizing
+from NLP.classifier.level_one import app_req_similarity
 
 
 def xml_req_parse(req_file_path):
@@ -23,7 +28,42 @@ def xml_req_parse(req_file_path):
     return req_words
 
 
-request_tokenizing('VoiceAssistant/NLP/classifier/tests/req.txt', 'VoiceAssistant/NLP/classifier/tests/')
-req_words = xml_req_parse('VoiceAssistant/NLP/classifier/tests/req.xml')
-print(req_words)
-parser(req_words)
+def xml_app_parse(app_file_path):
+    """
+    :param app_file_path:
+    :return: tuple containing key words of a giving app
+    """
+    app_words = []
+    apptree = ET.parse(app_file_path)
+    approot = apptree.getroot()
+    for child in approot.find('word_set'):
+        app_words.append(child.attrib['value'])
+    return app_words
+
+
+def classify_zero_or_one(xml_req_path, apps_path='../data/apps_data/'):
+    """
+    :param apps_path: path to the apps XML files
+    :param xml_req_path: path to the request file to classify
+    :return: classify the request to be treated as level 0 or 1
+    """
+    req_words = xml_req_parse(xml_req_path)
+    app_files = [f for f in listdir(apps_path) if isfile(join(apps_path, f))]
+    sim_scores = {}
+    stemmed_sim_score = {}
+    level0 = parser(req_words)
+    for app in app_files:
+        app_words = xml_app_parse(join(apps_path, app))
+        sc, ssc = app_req_similarity(app_words, req_words)
+        sim_scores[app] = sc
+        stemmed_sim_score[app] = ssc
+    max_sc_app = max(sim_scores.items(), key=operator.itemgetter(1))[0]
+    max_ssc_app = max(stemmed_sim_score.items(), key=operator.itemgetter(1))[0]
+    if level0 == True:
+        return 0, None, None
+    else:
+        return 1, max_sc_app, max_ssc_app
+
+
+a, b, c = classify_zero_or_one('../data/user_requests/req.xml', '../data/apps_data')
+print(a, b, c)
