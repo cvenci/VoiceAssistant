@@ -59,10 +59,14 @@ def classify_zero_or_one(xml_req_path, apps_path='../data/apps_data/'):
         stemmed_sim_score[app] = ssc
     max_sc_app = max(sim_scores.items(), key=operator.itemgetter(1))[0]
     max_ssc_app = max(stemmed_sim_score.items(), key=operator.itemgetter(1))[0]
-    if level0 == True:
+    if level0:
         return 0, None, None
     else:
         return 1, max_sc_app, max_ssc_app
+
+
+def arguments_extraction():
+    pass
 
 
 a, b, c = classify_zero_or_one('../data/user_requests/req.xml', '../data/apps_data')

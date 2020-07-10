@@ -4,3 +4,4 @@ VoiceRecognition/deepspeech-train-venv
 VoiceRecognition/data
 /.idea
 /.vscode
+**/__pycache__/
