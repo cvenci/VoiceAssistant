@@ -45,3 +45,4 @@ def request_tokenizing(req_text_path, save_path='../data/user_requests'):
 
 # STEMMINNG THE WORDS : for now we are using ISRIStemmer from nltk whitch is a heavy stemmer
 # more work will be done in order to test other stemmers
+
