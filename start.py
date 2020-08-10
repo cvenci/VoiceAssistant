@@ -1,8 +1,17 @@
 # import NLP.nlp.tokenizer as tk
 # tk.request_tokenizing('NLP/data/user_requests/req.txt', stop_words_path='NLP/data/arabic_stopwords.txt', save_path='NLP/data/user_requests')
-from os import listdir
-from os.path import isfile, join
-mypath = 'NLP/data/apps_data'
-files = [f for f in listdir(mypath) if isfile(join(mypath, f))]
-print(files)
-print(join(mypath, files[0]))
+
+"""from nltk.tokenize import WordPunctTokenizer
+from nltk.stem import ISRIStemmer
+
+tokenizer = WordPunctTokenizer()
+t = tokenizer.tokenize('المدرسة')
+print(t)
+stemmer = ISRIStemmer()
+s = stemmer.stem(t[0])
+print(s)
+"""
+line = '   something   '
+line = line.lstrip(' ').rstrip(' ')
+line = line.replace('s', 't')
+print(line)

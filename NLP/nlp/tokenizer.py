@@ -7,9 +7,14 @@ determine the type of the command in the input
 
 from nltk.tokenize import WordPunctTokenizer
 from nltk.corpus import stopwords
+from nltk.stem import ISRIStemmer
 import re
 import xml.etree.cElementTree as ET
 from xml.dom import minidom  # pycharm error
+
+
+def request_normalizer(req_text_path, save_path='../data/user_request'):
+    pass
 
 
 def request_tokenizing(req_text_path, save_path='../data/user_requests'):
@@ -43,6 +48,6 @@ def request_tokenizing(req_text_path, save_path='../data/user_requests'):
         f.write(xmlstr)
     f.close()
 
+request_tokenizing('../data/user_requests/req.txt')
 # STEMMINNG THE WORDS : for now we are using ISRIStemmer from nltk whitch is a heavy stemmer
 # more work will be done in order to test other stemmers
-

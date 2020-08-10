@@ -4,7 +4,7 @@ VoiceRecognition/deepspeech-train-venv
 VoiceRecognition/data
 /.idea
 /.vscode
-
+NLP/Response_generation/Deeplearning/data
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
