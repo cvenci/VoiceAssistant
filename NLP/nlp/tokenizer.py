@@ -10,7 +10,7 @@ from nltk.corpus import stopwords
 from nltk.stem import ISRIStemmer
 import re
 import xml.etree.cElementTree as ET
-from xml.dom import minidom  # pycharm error
+from xml.dom import minidom
 
 
 def request_normalizer(req_text_path, save_path='../data/user_request'):
@@ -41,13 +41,13 @@ def request_tokenizing(req_text_path, save_path='../data/user_requests'):
         ET.SubElement(tokElem, 'word', id=str(i), value=str(t), stop_word=str(sw))
         i += 1
         sw = False
-    filestr = '/'+req_text_path.split('/')[-1].split('.')[0]+'.xml'
+    file_str = save_path + '/'+req_text_path.split('/')[-1].split('.')[0]+'.xml'
 
     xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(indent="    ")
-    with open(save_path + filestr, 'w', encoding='utf-8') as f:
+    with open(file_str, 'w', encoding='utf-8') as f:
         f.write(xmlstr)
     f.close()
+    return file_str
 
-request_tokenizing('../data/user_requests/req.txt')
-# STEMMINNG THE WORDS : for now we are using ISRIStemmer from nltk whitch is a heavy stemmer
+# STEMMING THE WORDS : for now we are using ISRIStemmer from nltk witch is a heavy stemmer
 # more work will be done in order to test other stemmers

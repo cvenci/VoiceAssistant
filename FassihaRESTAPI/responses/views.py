@@ -1,51 +1,46 @@
 from django.shortcuts import render
-
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.parsers import JSONParser
-from commands.models import Commands
-from commands.serializers import CommandsSerializer
+from responses.models import Response
+from responses.serializers import ResponseSerializer
 
 
 @csrf_exempt
-def commands_list(request):
+def response_list(request):
     if request.method == 'GET':
-        cmds = Commands.objects.all()
-        serializer = CommandsSerializer(cmds, many=True)
+        responses = Response.objects.all()
+        serializer = ResponseSerializer(responses, many=True)
         return JsonResponse(serializer.data, safe=False)
 
     elif request.method == 'POST':
         data = JSONParser().parse(request)
-        serializer = CommandsSerializer(data=data)
-        # HERE THE WORK
+        serializer = ResponseSerializer(data=data)
         if serializer.is_valid():
             serializer.save()
-            print('object saved !!')
             return JsonResponse(serializer.data, status=201)
         return JsonResponse(serializer.errors, status=400)
 
 
 @csrf_exempt
-def commands_detail(request, pk):
+def response_detail(request, pk):
     try:
-        cmd = Commands.objects.get(pk=pk)
-    except Commands.DoesNotExist:
+        response = Response.objects.get(pk=pk)
+    except Response.DoesNotExist:
         return HttpResponse(status=404)
-    
-    if request.method == 'GET':
-        serializer = CommandsSerializer(cmd)
+
+    if request.method  == 'GET':
+        serializer = ResponseSerializer(response)
         return JsonResponse(serializer.data)
-    
+
     elif request.method == 'PUT':
         data = JSONParser().parse(request)
-        serializer = CommandsSerializer(cmd, data=data)
+        serializer = ResponseSerializer(response, data=data)
         if serializer.is_valid():
             serializer.save()
             return JsonResponse(serializer.data)
-        return JsonResponse(serializer.errors, status=404)
-    
-    elif request.method =='DELETE':
-        cmd.delete()
-        print('object deleted !!')
+        return JsonResponse(serializer.errors, status=400)
+
+    elif request.method == 'DELETE':
+        response.delete()
         return HttpResponse(status=204)
-        

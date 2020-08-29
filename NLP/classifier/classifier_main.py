@@ -2,9 +2,6 @@
     *passing the request to levels to be classified
     *receiving the classification response and processing the response"""
 
-import sys
-sys.path.append("VoiceAssistant/")
-
 from os import listdir
 from os.path import isfile, join
 from xml.etree import ElementTree as ET
@@ -34,9 +31,9 @@ def xml_app_parse(app_file_path):
     :return: tuple containing key words of a giving app
     """
     app_words = []
-    apptree = ET.parse(app_file_path)
-    approot = apptree.getroot()
-    for child in approot.find('word_set'):
+    app_tree = ET.parse(app_file_path)
+    app_root = app_tree.getroot()
+    for child in app_root.find('word_set'):
         app_words.append(child.attrib['value'])
     return app_words
 
@@ -51,23 +48,29 @@ def classify_zero_or_one(xml_req_path, apps_path='../data/apps_data/'):
     app_files = [f for f in listdir(apps_path) if isfile(join(apps_path, f))]
     sim_scores = {}
     stemmed_sim_score = {}
-    level0 = parser(req_words)
+
+    level0, level0_tags = parser(req_words)
+    if level0:
+        return 0, level0_tags, 'None'
     for app in app_files:
         app_words = xml_app_parse(join(apps_path, app))
         sc, ssc = app_req_similarity(app_words, req_words)
         sim_scores[app] = sc
         stemmed_sim_score[app] = ssc
-    max_sc_app = max(sim_scores.items(), key=operator.itemgetter(1))[0]
-    max_ssc_app = max(stemmed_sim_score.items(), key=operator.itemgetter(1))[0]
-    if level0:
-        return 0, None, None
+    max_sc_app = max(sim_scores.items(), key=operator.itemgetter(1))
+    max_ssc_app = max(stemmed_sim_score.items(), key=operator.itemgetter(1))
+
+    if float(max_sc_app[1]) >= 0.25:
+        max_sc_app = max_sc_app[0]
     else:
-        return 1, max_sc_app, max_ssc_app
+        max_sc_app = 'None'
+    if float(max_ssc_app[1]) >= 0.25:
+        max_ssc_app = max_ssc_app[0]
+    else:
+        max_ssc_app = 'None'
+
+    return 1, max_sc_app, max_ssc_app
 
 
-def arguments_extraction():
-    pass
-
-
-a, b, c = classify_zero_or_one('../data/user_requests/req.xml', '../data/apps_data')
-print(a, b, c)
+#a, b, c = classify_zero_or_one('../data/user_requests/req.xml', '../data/apps_data')
+#print(a, b, c)

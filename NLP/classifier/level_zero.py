@@ -4,6 +4,7 @@ from NLP.classifier.rules import OBJECTS, VERBS, TIME_OBJECTS, PLACE_OBJECTS, AP
 def parser(req_words):
     """parse and match the request with the RULES and return an exit status
     the parser build a bottom up verification"""
+    # verify the validity of every word in the request
     tags = []
     for word in req_words:
         if word in VERBS:
@@ -16,7 +17,10 @@ def parser(req_words):
             tags.append('APP_OBJECT')
         else:
             tags.append('NONE')
+
     # Verifying the validity of the request by matching it with the rules
+    # Note that the request could have valid syntax (valid = 1) but
+    # semantically wrong this issue is handled in response generation
     valid = False
     if len(tags) == 1 and tags[0] == 'VERB':
         valid = True
@@ -24,6 +28,6 @@ def parser(req_words):
         for i in range(1, len(tags)):
             if tags[i] not in OBJECTS:
                 break
-            else:
-                valid = True
-    return valid
+        valid = True
+
+    return valid, tags
