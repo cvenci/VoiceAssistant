@@ -3,7 +3,7 @@ from responses.models import Response
 
 
 class ResponseSerializer(serializers.Serializer):
-    id = serializers.IntegerField(read_only=True)
+    id = serializers.IntegerField()
     app_id = serializers.IntegerField()
     args = serializers.CharField(style={'base_template':'textarea.html'})
     core = serializers.CharField(style={'base_template':'textarea.html'})

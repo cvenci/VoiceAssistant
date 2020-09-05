@@ -6,6 +6,12 @@ from rest_framework.parsers import JSONParser
 from commands.models import Commands
 from commands.serializers import CommandsSerializer
 
+from responses.models import Response
+from responses.serializers import ResponseSerializer
+from rest_framework.renderers import JSONRenderer
+
+
+from start import run
 
 @csrf_exempt
 def commands_list(request):
@@ -17,10 +23,27 @@ def commands_list(request):
     elif request.method == 'POST':
         data = JSONParser().parse(request)
         serializer = CommandsSerializer(data=data)
-        # HERE THE WORK
         if serializer.is_valid():
-            serializer.save()
-            print('object saved !!')
+            #serializer.save()
+            """
+            # HERE THE WORK # 
+            response = Response.objects.get(pk=1)
+            response.core=data['core']
+            #response = Response(app_id=1, args="arguments",core=data['core'])
+            response.save()
+            response_serializer = ResponseSerializer(response)
+            content = JSONRenderer().render(response_serializer.data)
+            print('object recived !!')"""
+
+            a, b, c = run()
+            response = Response.objects.get(pk=1)
+            response.core = b
+            response.app_id = int(a)
+            response.args=""
+            response.save()
+            response_serializer = ResponseSerializer(response)
+            content = JSONRenderer().render(response_serializer.data)
+            # END  # 
             return JsonResponse(serializer.data, status=201)
         return JsonResponse(serializer.errors, status=400)
 

@@ -18,6 +18,7 @@ def response_list(request):
         serializer = ResponseSerializer(data=data)
         if serializer.is_valid():
             serializer.save()
+            print('Response received')
             return JsonResponse(serializer.data, status=201)
         return JsonResponse(serializer.errors, status=400)
 

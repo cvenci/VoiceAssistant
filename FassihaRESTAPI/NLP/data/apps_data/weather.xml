@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!--Météo -->
+<application id="1" class="weather" type="">
+  <word_set>
+  <!-- Non Composés -->
+   <word id="1" composed="false" value="طقس" />
+   <word id="" composed="false" value="طقوس" />
+   <word id="" composed="false" value="جو" />
+   <word id="" composed="false" value="أجواء" />
+   <word id="" composed="false" value="جوي" />
+   <word id="" composed="false" value="جوية" />
+   <word id="" composed="false" value="مناخ" />
+   <word id="" composed="false" value="مطر" />
+   <word id="" composed="false" value="أمطار" />
+   <word id="" composed="false" value="مطارية" />
+   <word id="" composed="false" value="ممطر" />
+   <word id="" composed="false" value="مطرت" />
+   <word id="" composed="false" value="أمطرت" />
+   <word id="" composed="false" value="تمطر" />
+   <word id="" composed="false" value="ثلج" />
+   <word id="" composed="false" value="ثلوج" />
+   <word id="" composed="false" value="مثلج" />
+   <word id="" composed="false" value="أثلجت" />
+   <word id="" composed="false" value="تثلج" />
+   <word id="" composed="false" value="ريح" /> 
+   <word id="" composed="false" value="رياح" />
+   <word id="" composed="false" value="برد" />
+   <word id="" composed="false" value="برودة" />
+   <word id="" composed="false" value="بارد" />
+   <word id="" composed="false" value="يبرد" />
+   <word id="" composed="false" value="معتدل" />
+   <word id="" composed="false" value="إعتدل" />
+   <word id="" composed="false" value="عدل" />
+   <word id="" composed="false" value="يعتدل" />
+   <word id="" composed="false" value="إعتدال" />
+   <word id="" composed="false" value="بارومتر" />
+   <word id="" composed="false" value="غيم" />
+   <word id="" composed="false" value="غيمة" />
+   <word id="" composed="false" value="غيوم" />
+   <word id="" composed="false" value="تغيمت" />
+   <word id="" composed="false" value="تتغيم" />
+   <word id="" composed="false" value="مغيم" />
+   <word id="" composed="false" value="تسحبت" />
+   <word id="" composed="false" value="تتسحب" />
+   <word id="" composed="false" value="سحاب" />
+   <word id="" composed="false" value="سحب" />
+   <word id="" composed="false" value="سحابة" />
+   <word id="" composed="false" value="عاصفة" />
+   <word id="" composed="false" value="عواصف" />
+   <word id="" composed="false" value="عاصفات" />
+   <word id="" composed="false" value="عصف" />
+   <word id="" composed="false" value="عصفت" />
+   <word id="" composed="false" value="تعصف" />
+   <word id="" composed="false" value="زوبعة" />
+   <word id="" composed="false" value="زوابع" />
+   <word id="" composed="false" value="إعصار" />
+   <word id="" composed="false" value="أعاصير" />
+   <word id="" composed="false" value="عصر" />
+   <word id="" composed="false" value="ملاحة" />
+   <word id="" composed="false" value="ملح" />
+   <word id="" composed="false" value="سباحة" />
+   <word id="" composed="false" value="مسبح" />
+   <word id="" composed="false" value="سبح" />
+   <word id="" composed="false" value="أسبح" />
+   <word id="" composed="false" value="نسبح" />
+   <word id="" composed="false" value="يسبح" />
+   <word id="" composed="false" value="صيد" />
+   <word id="" composed="false" value="إصطاد" />
+   <word id="" composed="false" value="يصطاد" />
+   <word id="" composed="false" value="أصطاد" />
+   <word id="" composed="false" value="إصطياد" />
+   <word id="" composed="false" value="حار" />
+   <word id="" composed="false" value="حارة" />
+   <word id="" composed="false" value="حرارة" />
+   <word id="" composed="false" value="إحترار" />
+   <word id="" composed="false" value="دافئ" />
+   <word id="" composed="false" value="مدفئة" />
+   <word id="" composed="false" value="دفأ" />
+   <word id="" composed="false" value="دفء" />
+   <word id="" composed="false" value="دفئ" />
+   <word id="" composed="false" value="سخن" />
+   <word id="" composed="false" value="يسخن" />
+   <word id="" composed="false" value="ساخن" />
+   <word id="" composed="false" value="سخونة" />
+   <word id="" composed="false" value="سخنت" />
+   <word id="" composed="false" value="برق" />
+   <word id="" composed="false" value="برقت" />
+   <word id="" composed="false" value="رعد" />
+   <word id="" composed="false" value="رعدت" />
+   <word id="" composed="false" value="فيضان" />
+   <word id="" composed="false" value="فاض" />
+   <word id="" composed="false" value="يفيض" />
+   <word id="" composed="false" value="فاضت" />
+   <word id="" composed="false" value="تفيض" />
+   <word id="" composed="false" value="فيضانات" />
+   <word id="" composed="false" value="طوفان" />
+   <word id="" composed="false" value="معطف" />
+   <word id="" composed="false" value="معاطف" />
+   <word id="" composed="false" value="عطف" />
+   <word id="" composed="false" value="قفازات" />
+   <word id="" composed="false" value="قفز" />
+   <word id="" composed="false" value="قفاز" />
+   <word id="" composed="false" value="شال" />
+   <word id="" composed="false" value="جوارب" />
+   <word id="" composed="false" value="جورب" />
+   <word id="" composed="false" value="جرب" />
+   <word id="" composed="false" value="قبعة" />
+   <word id="" composed="false" value="قبعات" />
+   <word id="" composed="false" value="تنورة" />
+   <word id="" composed="false" value="نور" />
+   <word id="" composed="false" value="تنورات" />
+   <word id="" composed="false" value="فستان" />
+   <word id="" composed="false" value="فساتين" />
+   <word id="" composed="false" value="صندلة" />
+   <word id="" composed="false" value="صنادل" />
+   <word id="" composed="false" value="لباس" />
+   <word id="" composed="false" value="لباسي" />
+   <word id="" composed="false" value="لبس" />
+   <word id="" composed="false" value="لبست" />
+   <word id="" composed="false" value="ألبس" />
+   <word id="" composed="false" value="ألبسة" />
+   <word id="" composed="false" value="رداء" />
+   <word id="" composed="false" value="ردائي" />
+   <word id="" composed="false" value="إرتديت" />
+   <word id="" composed="false" value="أرتدي" />
+   <word id="" composed="false" value="شتاء" />
+   <word id="" composed="false" value="ربيع" />
+   <word id="" composed="false" value="صيف" />
+   <word id="" composed="false" value="تصييف" />
+   <word id="" composed="false" value="خريف" />
+   <word id="" composed="false" value="بحر" />
+   <word id="" composed="false" value="يحار" />
+   <word id="" composed="false" value="بحور" />
+   <word id="" composed="false" value="أبحر" />
+   <word id="" composed="false" value="نبحر" />
+   <word id="" composed="false" value="موج" />
+   <word id="" composed="false" value="موجة" />
+   <word id="" composed="false" value="موجات" />
+   <word id="" composed="false" value="أمواج" />
+   <word id="" composed="false" value="فصل" />
+   <word id="" composed="false" value="فصول" />
+   <word id="" composed="false" value="هواء" />
+   <word id="" composed="false" value="شجرة" />
+   <word id="" composed="false" value="أشجار" />
+   <word id="" composed="false" value="شجيرات" />
+   <word id="" composed="false" value="ضغط" />
+   <word id="" composed="false" value="مرصد" />
+   <word id="" composed="false" value="أرصاد" />
+   <word id="" composed="false" value="رصد" />
+   <word id="" composed="false" value="جيولوجيا" />
+   <word id="" composed="false" value="كيمياء" />
+   <word id="" composed="false" value="بيولوجيا" />
+   <word id="" composed="false" value="فيزياء" />
+   <word id="" composed="false" value="تنبؤ" />
+   <word id="" composed="false" value="تنبأ" />
+   <word id="" composed="false" value="يتنبؤ" />
+   <word id="" composed="false" value="يتنبأ" />
+   <word id="" composed="false" value="إحتباس" />
+   <word id="" composed="false" value="رطب" />
+   <word id="" composed="false" value="ترطيب" />
+   <word id="" composed="false" value="رطوبة" />
+   <word id="" composed="false" value="نسمة" />
+   <word id="" composed="false" value="نسم" />
+   <word id="" composed="false" value="نسيم" />
+   <word id="" composed="false" value="إستوى" />
+   <word id="" composed="false" value="يستوي" />
+   <word id="" composed="false" value="إستوائي" />
+   <word id="" composed="false" value="مستوي" />
+   <word id="" composed="false" value="مستوية" />
+   <word id="" composed="false" value="ساء" />
+   <word id="" composed="false" value="يسوء" />
+   <word id="" composed="false" value="سيء" />
+   <word id="" composed="false" value="جيد" />
+   <word id="" composed="false" value="جف" />
+   <word id="" composed="false" value="جاف" />
+   <word id="" composed="false" value="جافة" />
+   <word id="" composed="false" value="يجف" />
+   <word id="" composed="false" value="جفت" />
+   <word id="" composed="false" value="جفاف" />
+   <word id="" composed="false" value="قطب" />
+   <word id="" composed="false" value="قطبي" />
+   <word id="" composed="false" value="قطبية" />
+   <word id="" composed="false" value="شمس" />
+   <word id="" composed="false" value="مشمس" />
+   <word id="" composed="false" value="قاري" />
+   <word id="" composed="false" value="مدار" />
+   <word id="" composed="false" value="موسم" />
+   <word id="" composed="false" value="مواسم" />
+   <word id="" composed="false" value="خصبة" />
+   <word id="" composed="false" value="خصب" />
+   <word id="" composed="false" value="خصوبة" />
+   <word id="" composed="false" value="ساحل" />
+   <word id="" composed="false" value="سواحل" />
+   <word id="" composed="false" value="جغرافيا" />
+   <word id="" composed="false" value="محيط" />
+   <word id="" composed="false" value="محيطات" />
+   <word id="" composed="false" value="إضطرب" />
+   <word id="" composed="false" value="يضطرب" />
+   <word id="" composed="false" value="إضطراب" />
+   <word id="" composed="false" value="إضطرابات" />
+   <word id="" composed="false" value="مضطرب" />
+   <word id="" composed="false" value="جليد" />
+   <word id="" composed="false" value="جلد" />
+   <word id="" composed="false" value="بيئة" />
+   <word id="" composed="false" value="بيئات" />
+   <word id="" composed="false" value="طبيعة" />
+   <word id="" composed="false" value="تربة" />
+   <word id="" composed="false" value="أتربة" />
+   <word id="" composed="false" value="تراب" />
+   <word id="" composed="false" value="تربات" />
+   <word id="" composed="false" value="تباين" />
+   <word id="" composed="false" value="صحراء" />
+   <word id="" composed="false" value="صحاري" />
+   <word id="" composed="false" value="جبل" />
+   <word id="" composed="false" value="جبال" />
+   <word id="" composed="false" value="نبتة" />
+   <word id="" composed="false" value="نباتات" />
+   <word id="" composed="false" value="نبات" />
+   <word id="" composed="false" value="نبت" />
+   <word id="" composed="false" value="نبتت" />
+   <word id="" composed="false" value="نبوت" />
+   <word id="" composed="false" value="ينبت" />
+   <word id="" composed="false" value="تنبت" />
+   <word id="" composed="false" value="قاحلة" />
+   <word id="" composed="false" value="قاحل" />
+   <word id="" composed="false" value="قحل" />
+   <word id="" composed="false" value="أرض" />
+   <word id="" composed="false" value="أراضي" />
+   <word id="" composed="false" value="ضباب" />
+   <word id="" composed="false" value="ضب" />
+   <word id="" composed="false" value="صقيع" />
+   <word id="" composed="false" value="صقع" />
+   <word id="" composed="false" value="زراعة" />
+   <word id="" composed="false" value="زرع" />
+   <word id="" composed="false" value="يزرع" />
+   <word id="" composed="false" value="أزرع" />
+   <word id="" composed="false" value="نزرع" />
+   <word id="" composed="false" value="مزارع" />
+   <word id="" composed="false" value="مزرعة" />
+   <word id="" composed="false" value="زراعية" />
+   <word id="" composed="false" value="مزروعات" />
+   <word id="" composed="false" value="فلاحة" />
+   <word id="" composed="false" value="فلح" />
+   <word id="" composed="false" value="يفلح" />
+   <word id="" composed="false" value="أفلح" />
+   <word id="" composed="false" value="فلاح" />
+   <word id="" composed="false" value="فلاحية" />
+   <word id="" composed="false" value="ري" />
+   <word id="" composed="false" value="جمد" />
+   <word id="" composed="false" value="تجمد" />
+   <word id="" composed="false" value="متجمد" />
+   <word id="" composed="false" value="جامد" />
+   <word id="" composed="false" value="جامدة" />
+   <word id="" composed="false" value="يتجمد" />
+   <word id="" composed="false" value="جنوب" />
+   <word id="" composed="false" value="شمال" />
+   <word id="" composed="false" value="شرق" />
+   <word id="" composed="false" value="غرب" />
+   <word id="" composed="false" value="غابة" />
+   <word id="" composed="false" value="غابات" />
+   <word id="" composed="false" value="تضاريس" />
+   <word id="" composed="false" value="تيار" />
+   <word id="" composed="false" value="غرس" />
+   <word id="" composed="false" value="أغرس" />
+   <word id="" composed="false" value="نغرس" />
+   <word id="" composed="false" value="غرس" />
+   <word id="" composed="false" value="يغرس" />
+   <word id="" composed="false" value="أسبوع" />
+   <word id="" composed="false" value="أسابيع" />
+   <word id="" composed="false" value="شهر" />
+   <word id="" composed="false" value="شهور" />
+   <word id="" composed="false" value="يوم" />
+   <word id="" composed="false" value="أيام" />
+   <word id="" composed="false" value="سماء" />
+   <word id="" composed="false" value="سماوات" />
+   <word id="" composed="false" value="تلة" />
+   <word id="" composed="false" value="تلال" />
+   <word id="" composed="false" value="أطلال" />
+   <word id="" composed="false" value="هضبة" />
+   <word id="" composed="false" value="هضاب" />
+   <word id="" composed="false" value="سهل" />
+   <word id="" composed="false" value="سهول" />
+   <word id="" composed="false" value="شاطئ" />
+   <word id="" composed="false" value="شواطئ" />
+   <word id="" composed="false" value="خيم" />
+   <word id="" composed="false" value="يخيم" />
+   <word id="" composed="false" value="أخيم" />
+   <word id="" composed="false" value="نخيم" />
+   <word id="" composed="false" value="مخيم" />
+   <word id="" composed="false" value="مخيمات" />
+   <word id="" composed="false" value="تخييم" />
+   <word id="" composed="false" value="شروق" />
+   <word id="" composed="false" value="أشرقت" />
+   <word id="" composed="false" value="غروب" />
+   <word id="" composed="false" value="غروب" />
+   <word id="" composed="false" value="قمر" />
+   <word id="" composed="false" value="نهر" />
+   <word id="" composed="false" value="أنهار" />
+   <word id="" composed="false" value="واد" />
+   <word id="" composed="false" value="أودية" />
+   <word id="" composed="false" value="وديان" />
+   <word id="" composed="false" value="شلال" />
+   <word id="" composed="false" value="شلالات" />
+   <word id="" composed="false" value="بركة" />
+   <word id="" composed="false" value="بركات" />
+   <word id="" composed="false" value="وحل" />
+   <word id="" composed="false" value="طين" />
+   <word id="" composed="false" value="إنزلاقات" />
+   <word id="" composed="false" value="زلق" />
+   <word id="" composed="false" value="ينزلق" />
+   <word id="" composed="false" value="أزلق" />
+   <word id="" composed="false" value="نزلق" />
+   <word id="" composed="false" value="أخضر" />
+   <word id="" composed="false" value="يابس" />
+   <word id="" composed="false" value="يابسة" />
+   <word id="" composed="false" value="يبس" />
+   <word id="" composed="false" value="ييبس" />
+   <word id="" composed="false" value="يبست" />
+   <word id="" composed="false" value="تيبس" />
+   <word id="" composed="false" value="ماء" />
+   <word id="" composed="false" value="هياه" />
+   <word id="" composed="false" value="سد" />
+   <word id="" composed="false" value="سدود" />
+   <word id="" composed="false" value="غلة" />
+   <word id="" composed="false" value="غلات" />
+   <word id="" composed="false" value="جني" />
+   <word id="" composed="false" value="أجني" />
+   <word id="" composed="false" value="نجني" />
+   <word id="" composed="false" value="جنيت" />
+   <word id="" composed="false" value="جنى" />
+   <word id="" composed="false" value="يجني" />
+   <word id="" composed="false" value="جنت" />
+   <word id="" composed="false" value="تجني" />
+   <word id="" composed="false" value="زيتون" />
+   <word id="" composed="false" value="كرمة" />
+   <word id="" composed="false" value="ثمار" />
+   <word id="" composed="false" value="ثمرات" />
+   <word id="" composed="false" value="ثمرة" />
+   <word id="" composed="false" value="أقطف" />
+   <word id="" composed="false" value="قطف" />
+   <word id="" composed="false" value="نقطف" />
+   <word id="" composed="false" value="فاكهة" />
+   <word id="" composed="false" value="فواكه" />
+   <word id="" composed="false" value="خضر" />
+   <word id="" composed="false" value="متقلب" />
+   <word id="" composed="false" value="تقلبات" />
+   <word id="" composed="false" value="يتقلب" />
+   <word id="" composed="false" value="تقلب" />
+   <word id="" composed="false" value="هب" />
+   <word id="" composed="false" value="يهب" />
+   <word id="" composed="false" value="هبت" />
+   <word id="" composed="false" value="تهب" />
+   <word id="" composed="false" value="هبوب" />
+   <word id="" composed="false" value="هطلت" />
+   <word id="" composed="false" value="تتهاطل" />
+   <word id="" composed="false" value="تهاطل" />
+   <word id="" composed="false" value="هطل" />
+   <word id="" composed="false" value="سيل" />
+   <word id="" composed="false" value="سيول" />
+   <word id="" composed="false" value="بركان" />
+   <word id="" composed="false" value="براكين" />
+   <word id="" composed="false" value="تسونامي" />
+   <word id="" composed="false" value="بارحة" />
+   <word id="" composed="false" value="أمس" />
+   <word id="" composed="false" value="غد" />
+   <word id="" composed="false" value="غدا" />
+   <word id="" composed="false" value="قادم" />
+   <word id="" composed="false" value="قادمة" />
+   <word id="" composed="false" value="مرتفعات" />
+   <word id="" composed="false" value="مدن" />
+   <word id="" composed="false" value="عاصمة" />
+   <word id="" composed="false" value="منخفضات" />
+   <word id="" composed="false" value="داخل" />
+   <word id="" composed="false" value="تذبذب" />
+   <word id="" composed="false" value="يوم" />
+   <word id="" composed="false" value="أيام" />
+   <word id="" composed="false" value="نهار" />
+   <word id="" composed="false" value="ليل" />
+   <word id="" composed="false" value="ظهر" />
+   <word id="" composed="false" value="ظهيرة" />
+   <word id="" composed="false" value="زوال" />
+   <word id="" composed="false" value="صباح" />
+   <word id="" composed="false" value="صبيحة" />
+   <word id="" composed="false" value="مساء" />
+   <word id="" composed="false" value="حرث" />
+   <word id="" composed="false" value="يحرث" />
+   <word id="" composed="false" value="أحرث" />
+   <word id="" composed="false" value="نحرث" />
+   <word id="" composed="false" value="حراثة" />
+   <word id="" composed="false" value="سقي" />
+   <word id="" composed="false" value="يسقي" />
+   <word id="" composed="false" value="أسقي" />
+   <word id="" composed="false" value="نسقي" />
+   <word id="" composed="false" value="حصد" />
+   <word id="" composed="false" value="يحصد" />
+   <word id="" composed="false" value="أحصد" />
+   <word id="" composed="false" value="نحصد" />
+   <word id="" composed="false" value="حصاد" />
+   <word id="" composed="false" value="محاصيل" />
+   <word id="" composed="false" value="محصول" />
+   
+<!-- Composés -->
+   <word id="" composed="true" value="خروج إلى شارع" />
+   <word id="" composed="true" value="خروج للشارع " />
+   <word id="" composed="true" value="أخرج إلى شارع" />
+   <word id="" composed="true" value="أخرج للشارع" />
+   <word id="" composed="true" value="أحوال جوية" />
+   <word id="" composed="true" value="أرصاد جوية" />
+   <word id="" composed="true" value="توقعات جوية" />
+   <word id="" composed="true" value="توقعات أحوال جو" />
+   <word id="" composed="true" value="توقعات أحوال طقس" />
+   <word id="" composed="true" value="توقعات أحوال طقس" />
+   <word id="" composed="true" value="نشرة جوية" />
+   <word id="" composed="true" value="نشرة طقس" />
+   <word id="" composed="true" value="درجة حرارة" />
+   <word id="" composed="true" value="درجات حرارة" />
+   <word id="" composed="true" value="تقلب جو" />
+   <word id="" composed="true" value="تقلبات جو" />
+   <word id="" composed="true" value="تقلب طقس" />
+   <word id="" composed="true" value="تقلبات طقس" />
+   <word id="" composed="true" value="تساقط أمطار" />
+   <word id="" composed="true" value="تساقط مطر" />
+   <word id="" composed="true" value="سقوط أمطار" />
+   <word id="" composed="true" value="سقوط مطر" />
+   <word id="" composed="true" value="هطول أمطار" />
+   <word id="" composed="true" value="هطول مطر" />
+   <word id="" composed="true" value="أمطار غزيرة" />
+   <word id="" composed="true" value="حالة جوية" />
+   <word id="" composed="true" value="حركة مرور" />
+   <word id="" composed="true" value="صيد بحري" />
+   <word id="" composed="true" value="ملاحة و صيد بحري" />
+   <word id="" composed="true" value="برد قارس" />
+   <word id="" composed="true" value="أمطار رعدية" />
+   <word id="" composed="true" value="طقس معتدل" />
+   <word id="" composed="true" value="طقس حار" />
+   <word id="" composed="true" value="طقس بارد" />
+   <word id="" composed="true" value="مناخ معتدل" />
+   <word id="" composed="true" value="غلاف جوي" />
+   <word id="" composed="true" value="مقياس حرارة" />
+   <word id="" composed="true" value="عاصفة ثلجية" />
+   <word id="" composed="true" value="علوم أرض" />
+   <word id="" composed="true" value="مسبار لاسلكي" />
+   <word id="" composed="true" value="شدة رياح" />
+   <word id="" composed="true" value="ديناميكية حرارية" />
+   <word id="" composed="true" value="أشعة شمس" />
+   <word id="" composed="true" value="هجرة طيور" />
+   <word id="" composed="true" value="تساقط أوراق شجر" />
+   <word id="" composed="true" value="قياس تدفق" />
+   <word id="" composed="true" value="بحر أبيض متوسط" />
+   <word id="" composed="true" value="طبقة أوزون" />
+   <word id="" composed="true" value="بحر هائج" />
+   <word id="" composed="true" value="بحر هادئ" />
+   <word id="" composed="true" value="بحر مضطرب" />
+   <word id="" composed="true" value="أيام أسبوع" />
+   <word id="" composed="true" value="زوبعة رملية" />
+   <word id="" composed="true" value="عطلة نهاية الأسبوع" />
+   <word id="" composed="true" value="سماء رمادية" />
+   <word id="" composed="true" value="سماء زرقاء" />
+   <word id="" composed="true" value="سماء مغيمة" />
+   <word id="" composed="true" value="طقس مغيم" />
+   <word id="" composed="true" value="طقس مضطرب" />
+   <word id="" composed="true" value="لباس شتوي" />
+   <word id="" composed="true" value="ألبسة شتوية" />
+   <word id="" composed="true" value="إحتباس حراري" />
+   <word id="" composed="true" value="موسم حصاد" />
+   <word id="" composed="true" value="موسم زراعة" />
+   <word id="" composed="true" value="موسم فلاحة" />
+   <word id="" composed="true" value="موسم حرث" />
+   <word id="" composed="true" value="موسم جني" />
+   <word id="" composed="true" value="موسم ري" />
+   <word id="" composed="true" value="موسم سقي" />
+   <word id="" composed="true" value="موسم غرس" />
+   <word id="" composed="true" value="جني زيتون" />
+   <word id="" composed="true" value="موسم حصاد" />
+   <word id="" composed="true" value="كوارث طبيعية" />
+   <word id="" composed="true" value="بيوت بلاستيكية" />
+   <word id="" composed="true" value=" أشعة شمس" />
+   <word id="" composed="true" value=" شروق شمس" />
+   <word id="" composed="true" value=" غروب شمس" />
+   <word id="" composed="true" value=" طلوع شمس" />
+   <word id="" composed="true" value=" أحوال بحر" />
+  </word_set>
+</application>
+
