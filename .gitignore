@@ -4,7 +4,9 @@ VoiceRecognition/deepspeech-train-venv
 VoiceRecognition/data
 /.idea
 /.vscode
-NLP/Response_generation/Deeplearning/data
+FassihaRESTAPI/NLP/Response_generation/Deeplearning/data
+FassihaRESTAPI/NLP/Response_generation/Deeplearning/logs
+FassihaRESTAPI/NLP/Response_generation/Deeplearning/.ipynb_checkpoints
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

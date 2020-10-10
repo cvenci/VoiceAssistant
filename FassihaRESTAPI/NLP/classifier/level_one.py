@@ -16,6 +16,7 @@ def app_req_similarity(app_words, req_words):
     :return:Return the similarity (a score) between the request and a given app
             2 approaches are used (with and without stemming)
     """
+
     stemmer = ISRIStemmer()
     count_dict = {}
     stemmed_count_dict = {}
@@ -41,4 +42,9 @@ def app_req_similarity(app_words, req_words):
     for k in stemmed_count_dict.keys():
         stemmed_score = stemmed_score + int(stemmed_count_dict[k])
     stemmed_score = stemmed_score / len(req_words)
+    print(score, stemmed_score)
     return score, stemmed_score
+
+
+#example = 'هل ستحدث عاصفة عند المقابلة'
+#s, sc = app_req_similarity()

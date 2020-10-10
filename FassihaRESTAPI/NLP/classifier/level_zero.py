@@ -5,7 +5,10 @@ def parser(req_words):
     """parse and match the request with the RULES and return an exit status
     the parser build a bottom up verification"""
     # verify the validity of every word in the request
+
     tags = []
+    app = ''
+
     for word in req_words:
         if word in VERBS:
             tags.append('VERB')
@@ -15,6 +18,7 @@ def parser(req_words):
             tags.append('PLACE_OBJECT')
         elif word in APP_OBJECTS:
             tags.append('APP_OBJECT')
+            app = word
         else:
             tags.append('NONE')
 
@@ -30,4 +34,4 @@ def parser(req_words):
                 break
         valid = True
 
-    return valid, tags
+    return valid, app, tags
