@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <root>
     <tokenization>
-        <word id="1" value="اضبط" stop_word="False" stem="ضبط"/>
-        <word id="2" value="المنبه" stop_word="False" stem="نبه"/>
+        <word id="1" value="افتح" stop_word="False" stem="فتح"/>
+        <word id="2" value="الساعه" stop_word="False" stem="سعه"/>
     </tokenization>
 </root>

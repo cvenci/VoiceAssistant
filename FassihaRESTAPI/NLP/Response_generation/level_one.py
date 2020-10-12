@@ -1,12 +1,11 @@
-from NLP.classifier.classifier_main import xml_req_parse
+def generate(results):
+    response = {'level': results['level']}
+    if results['app_id'] == 'weather.xml':
+        response['app_id'] = 1
+        response['core'] = 'فتح تطبيق الأحوال الجوية'
+    else:
+        response['app_id'] = 2
+        response['core'] = 'فتح تطبيق الساعة'
+    response['args'] = results['args']
 
-
-def arguments_extraction(req_xml, app, app_stm):
-    """
-    :param req_xml: path to the request XML
-    :param app: returned app from classifier
-    :param app_stm: returned stemmed app from the classifier
-    :return: arguments of the request
-    """
-    req_words = xml_req_parse(req_xml)
-    
+    return response

@@ -28,12 +28,13 @@ def commands_list(request):
             # HERE THE WORK #
             # print(data['core'])
 
-            level, app, args = run(data['core'])
-            print(level, app, args)
+            response_run = run(data['core'])
+
             response = Response.objects.get(pk=1)
-            response.core = app
-            response.app_id = int(level)
-            response.args = args
+            response.level = response_run['level']
+            response.core = response_run['core']
+            response.app_id = response_run['app_id']
+            response.args = response_run['args']
             response.save()
             response_serializer = ResponseSerializer(response)
             content = JSONRenderer().render(response_serializer.data)
