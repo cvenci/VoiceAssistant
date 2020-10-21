@@ -35,6 +35,7 @@ def commands_list(request):
             response.core = response_run['core']
             response.app_id = response_run['app_id']
             response.args = response_run['args']
+            response.command = response_run['command']
             response.save()
             response_serializer = ResponseSerializer(response)
             content = JSONRenderer().render(response_serializer.data)

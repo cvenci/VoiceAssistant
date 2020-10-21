@@ -21,6 +21,7 @@ def run(command_core):
     xml_path = tokenizer.request_tokenizing(txt_path, 'NLP/data/user_requests')
     results = classifier_main.classify_zero_or_one(xml_path, 'NLP/data/apps_data')
     print(results)
+    results['command'] = command_core
 
     if results['level'] == 0:
         response = level_zero.generate(results)
@@ -29,9 +30,9 @@ def run(command_core):
     results_s = {}
     if results['level'] == 1:
         results_s['level'] = 1
+        results_s['command'] = results['command']
         if (float(results['score']) >= 0.25 or (float(results['s_score']) >= 0.25)
                 and (results['app'] == results['s_app'])):
-            print('in level 1')
             results_s['app_id'] = results['app']
             results_s['args'] = results['args']
             response = level_one.generate(results_s)

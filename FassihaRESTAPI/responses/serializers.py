@@ -6,8 +6,9 @@ class ResponseSerializer(serializers.Serializer):
     id = serializers.IntegerField()
     level = serializers.IntegerField()
     app_id = serializers.IntegerField()
-    args = serializers.CharField(style={'base_template':'textarea.html'})
-    core = serializers.CharField(style={'base_template':'textarea.html'})
+    args = serializers.CharField(style={'base_template': 'textarea.html'})
+    core = serializers.CharField(style={'base_template': 'textarea.html'})
+    command = serializers.CharField(style={'base_template': 'textarea.html'})
 
     def create(self, validated_data):
         """
@@ -23,5 +24,6 @@ class ResponseSerializer(serializers.Serializer):
         instance.app_id = validated_data.get('app_id', instance.app_id)
         instance.args = validated_data.get('args', instance.args)
         instance.core = validated_data.get('core', instance.core)
+        instance.command = validated_data.get('command', instance.command)
         instance.save()
         return instance

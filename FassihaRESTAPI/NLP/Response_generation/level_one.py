@@ -1,5 +1,5 @@
 def generate(results):
-    response = {'level': results['level']}
+    response = {'level': results['level'], 'command': results['command']}
     if results['app_id'] == 'weather.xml':
         response['app_id'] = 1
         response['core'] = 'فتح تطبيق الأحوال الجوية'

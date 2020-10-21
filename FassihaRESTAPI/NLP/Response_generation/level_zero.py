@@ -8,8 +8,8 @@ def generate(results):
     :param results: results received from the classifier
     :return: A response dictionary corresponding to a response object
     """
-    response = {'level': results['level']}
-    if results['app'] == 'الطقس':
+    response = {'level': results['level'], 'command': results['command']}
+    if results['app'] == 'الطقس' or results['app'] == 'جويه':
         response['app_id'] = 1
         response['core'] = 'فتح تطبيق الطقس'
     else:

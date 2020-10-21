@@ -7,6 +7,7 @@ class Response(models.Model):
     app_id = models.IntegerField()
     args = models.TextField()
     core = models.TextField()
+    command = models.TextField(default='')
 
     class Meta:
         ordering = ['created']
