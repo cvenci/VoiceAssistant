@@ -4,13 +4,13 @@ This script is the main start point of the voice assistant
 from NLP.nlp import tokenizer
 from NLP.classifier import classifier_main
 from NLP.Response_generation import level_zero
-from NLP.Response_generation import  level_one
-from NLP.Response_generation import  level_two
+from NLP.Response_generation import level_one
+from NLP.Response_generation import level_two
 
 
 def run(command_core):
     """
-    :param command_core: The core attribute of the recieved command
+    :param command_core: The core attribute of the received command
     :return: run the integrity of the process
     """
     txt_path = 'NLP/data/user_requests/req2.txt'
@@ -31,7 +31,7 @@ def run(command_core):
     if results['level'] == 1:
         results_s['level'] = 1
         results_s['command'] = results['command']
-        if (float(results['score']) >= 0.25 or (float(results['s_score']) >= 0.25)
+        if ((float(results['score']) >= 0.25 or (float(results['s_score']) >= 0.25))
                 and (results['app'] == results['s_app'])):
             results_s['app_id'] = results['app']
             results_s['args'] = results['args']

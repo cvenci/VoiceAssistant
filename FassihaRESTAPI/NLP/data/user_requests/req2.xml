@@ -1,8 +1,9 @@
 <?xml version="1.0" ?>
 <root>
     <tokenization>
-        <word id="1" value="تحت" stop_word="False" stem="تحت"/>
-        <word id="2" value="تطبيق" stop_word="False" stem="طبق"/>
-        <word id="3" value="الطقس" stop_word="False" stem="طقس"/>
+        <word id="1" value="هل" stop_word="True" stem="هل"/>
+        <word id="2" value="اعتدي" stop_word="False" stem="عدي"/>
+        <word id="3" value="معطفي" stop_word="False" stem="عطف"/>
+        <word id="4" value="غدا" stop_word="False" stem="غدا"/>
     </tokenization>
 </root>

@@ -11,11 +11,11 @@ FINALS = ['VERB->افتح/اغلق/ادخل/ابحث',
           'PLACE_OBJECT->هنا/جزائر/امريكا',
           'APP_OBJECT->تطبيق/طقس/ساعة/لعبة']
 '''
-# TEESTING A NEW APPROACH
+# TESTING A NEW APPROACH
 VERBAL_PHRASE = ['VERB/VERB OBJECTS']
 OBJECTS = ['TIME_OBJECT', 'PLACE_OBJECT', 'APP_OBJECT']
 
 VERBS = ['افتح', 'اغلق', 'ادخل', 'ابحث']
 TIME_OBJECTS = ['غدا', 'امس', 'الان']
 PLACE_OBJECTS = ['امريكا', 'جزائر', 'هنا']
-APP_OBJECTS = ['لعبة', 'جويه', 'ساعة', 'طقس', 'تطبيق']
+APP_OBJECTS = ['لعبة', 'احوال', 'جويه', 'ساعة', 'طقس', 'تطبيق']

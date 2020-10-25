@@ -77,14 +77,14 @@ def classify_zero_or_one(xml_req_path, apps_path='../data/apps_data/'):
 
     results['level'] = 1
 
-    if float(max_sc_app[1]) >= 0.25:
+    if float(max_sc_app[1]) >= 0.30:
         results['app'] = max_sc_app[0]
         results['score'] = max_sc_app[1]
     else:
         results['app'] = 'None'
         results['score'] = 0
 
-    if float(max_ssc_app[1]) >= 0.25:
+    if float(max_ssc_app[1]) >= 0.30:
         results['s_app'] = max_ssc_app[0]
         results['s_score'] = max_ssc_app[1]
     else:
