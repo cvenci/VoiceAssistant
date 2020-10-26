@@ -8,10 +8,11 @@ def parser(req_words):
 
     tags = []
     app = ''
-
+    verb = ''
     for word in req_words:
         if word in VERBS:
             tags.append('VERB')
+            verb = word
         elif word in TIME_OBJECTS:
             tags.append('TIME_OBJECT')
         elif word in PLACE_OBJECTS:
@@ -34,4 +35,4 @@ def parser(req_words):
                 break
         valid = True
 
-    return valid, app, tags
+    return valid, app, verb, tags

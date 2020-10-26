@@ -59,10 +59,10 @@ def classify_zero_or_one(xml_req_path, apps_path='../data/apps_data/'):
     sim_scores = {}
     stemmed_sim_score = {}
     results = {}
-
-    level0, app, level0_tags = parser(req_words)
+    level0, app, verb, level0_tags = parser(req_words)
     if level0:
         results['level'] = 0
+        results['verb'] = verb
         results['app'] = app
         results['args'] = level0_tags
         return results

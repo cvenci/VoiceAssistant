@@ -3,9 +3,12 @@ def generate(results):
     if results['app_id'] == 'weather.xml':
         response['app_id'] = 1
         response['core'] = 'فتح تطبيق الأحوال الجوية'
-    else:
+    elif results['app_id'] == 'alarm_clock.xml':
         response['app_id'] = 2
         response['core'] = 'فتح تطبيق الساعة'
+    elif results['app_id'] == 'calculator.xml':
+        response['app_id'] = 3
+        response['core'] = 'فتح تطبيق الألة الحاسبة'
     response['args'] = results['args']
 
     return response

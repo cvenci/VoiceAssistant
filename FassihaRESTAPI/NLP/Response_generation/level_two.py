@@ -28,7 +28,6 @@ def generate_from_corpus(request,
     request.replace("ة", "ه")
     request.replace("أ", "ا")
     response = ""
-    print(requests)
     print(request in requests)
     if request in requests:
 

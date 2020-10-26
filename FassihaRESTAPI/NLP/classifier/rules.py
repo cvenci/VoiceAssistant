@@ -15,7 +15,7 @@ FINALS = ['VERB->افتح/اغلق/ادخل/ابحث',
 VERBAL_PHRASE = ['VERB/VERB OBJECTS']
 OBJECTS = ['TIME_OBJECT', 'PLACE_OBJECT', 'APP_OBJECT']
 
-VERBS = ['افتح', 'اغلق', 'ادخل', 'ابحث']
+VERBS = ['افتح', 'اغلق', 'ادخل', 'ابحث', 'اخرج']
 TIME_OBJECTS = ['غدا', 'امس', 'الان']
 PLACE_OBJECTS = ['امريكا', 'جزائر', 'هنا']
-APP_OBJECTS = ['لعبة', 'احوال', 'جويه', 'ساعة', 'طقس', 'تطبيق']
+APP_OBJECTS = ['لعبة', 'احوال', 'جويه', 'ساعة', 'طقس', 'تطبيق', 'انستغرام', 'حاسبه']

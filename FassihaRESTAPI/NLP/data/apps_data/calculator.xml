@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Calculator -->
+<application id ="3" class="calculator" type ="">
+    <word_set>
+        <word id="" composed="false" value ="جمع"/>
+        <word id="" composed="false" value="طرح"/>
+        <word id="" composed="false" value="ظرب"/>
+        <word id="" composed="false" value="قسمة"/>
+        <word id="" composed="false" value="زائد"/>
+        <word id="" composed="false" value="ناقص"/>
+        <word id="" composed="false" value="في"/>
+        <word id="" composed="false" value="على"/>
+        <word id="" composed="false" value="عملية"/>
+        <word id="" composed="false" value="عمليات"/>
+        <word id="" composed="false" value="حساب"/>
+        <word id="" composed="false" value="اعداد"/>
+        <word id="" composed="false" value="حاسبة"/>
+        <word id="" composed="false" value="كم"/>
+        <word id="" composed="false" value="ارقام"/>
+        <word id="" composed="false" value="احسب"/>
+        <word id="" composed="false" value="اضف"/>
+        <word id="" composed="false" value="اضافة"/>
+        <word id="" composed="false" value="كمية"/>
+        <word id="" composed="false" value="معادلة"/>
+        <word id="" composed="true" value="الة حاسبة"/>
+    </word_set>
+</application>

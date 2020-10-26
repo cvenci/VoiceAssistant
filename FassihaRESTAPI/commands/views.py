@@ -29,7 +29,7 @@ def commands_list(request):
             # print(data['core'])
 
             response_run = run(data['core'])
-
+            print(response_run)
             response = Response.objects.get(pk=1)
             response.level = response_run['level']
             response.core = response_run['core']
