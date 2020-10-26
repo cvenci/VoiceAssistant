@@ -45,6 +45,11 @@ def run(command_core):
                 results_s['args'] = results['args']
                 response = level_one.generate(results_s)
                 return response
+            elif results['score'] >= 0.25:
+                results_s['app_id'] = results['app']
+                results_s['args'] = results['args']
+                response = level_one.generate(results_s)
+                return response
 
         else:
             response = level_two.generate(results)

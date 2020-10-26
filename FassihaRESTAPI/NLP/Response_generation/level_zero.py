@@ -6,6 +6,7 @@ exit_keys = ["اخرج", "اغلق"]
 weather_keys = ['طقس', 'احوال', 'جويه']
 clock_keys = ["ساعة", "منبه"]
 calculator_keys = ["حاسبه"]
+music_keys = ["موسيقى"]
 facebook_keys = ["فيسبوك"]
 instagram_keys = ["انستغرام"]
 
@@ -35,6 +36,9 @@ def generate(results):
     elif results['app'] in instagram_keys:
         response['app_id'] = 5
         response['core'] = 'فتح تطبيق انستغرام'
+    elif results['app'] in music_keys:
+        response['app_id'] = 6
+        response['core'] = 'فتح تطبيق الموسيقى'
     else:
         response['app_id'] = 0
         response['core'] = 'نعتذر التطبيق الذي طلبتموه غير متاح'

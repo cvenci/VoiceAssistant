@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- Music -->
+<application id="6" class="music" type="">
+    <word_set>
+        <word id="1" composed="false" value="اغنية"/>
+        <word id="1" composed="false" value="اغاني"/>
+        <word id="1" composed="false" value="موسيقى"/>
+        <word id="1" composed="false" value="طرب"/>
+        <word id="1" composed="true" value="الة موسيقية"/>
+        <word id="1" composed="true" value="مزاج سيء"/>
+        <word id="1" composed="false" value="مزاج"/>
+        <word id="1" composed="false" value="روك"/>
+        <word id="1" composed="false" value="بوب"/>
+        <word id="1" composed="false" value="مغني"/>
+        <word id="1" composed="false" value="صوت"/>
+        <word id="1" composed="false" value="استوديو"/>
+        <word id="1" composed="false" value="اسمع"/>
+        <word id="1" composed="false" value="استمع"/>
+        <word id="1" composed="false" value="سماع"/>
+    </word_set>
+</application>
